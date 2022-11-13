@@ -1,0 +1,20 @@
+//  function : a javascript function is a block of code designed to perform a particular task and is executed when " something " calls it !!
+//  arguments : function arguments are the values received by the function when it is called,they behave as variables ,however they only live within the function and cannot be accessed outside of it.
+
+
+// 1-normal function
+function name() {
+    console.log('baibhav')
+}
+name()
+//2- function with arguments
+function boy(Name) {
+    console.log(Name)
+}
+boy("baibhav")
+//3- with string concatenation
+function greeting(everyone) {
+    greet = "hey " + everyone + ",a very good afternoon to all of you"
+    console.log(greet)
+}
+greeting("classmates")
