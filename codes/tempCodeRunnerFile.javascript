@@ -1,4 +1,4 @@
-function name() {
-//     console.log('baibhav')
-// }
-// name()
+function boy(Name) {
+    console.log(Name)
+}
+boy("baibhav")
