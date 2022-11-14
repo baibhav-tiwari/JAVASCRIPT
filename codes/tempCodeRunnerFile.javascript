@@ -1,4 +1,5 @@
-function boy(Name) {
-    console.log(Name)
+function greetings(you) {
+    greets = `hi ${you}, Nice to meet you!`
+    console.log(greets)
 }
-boy("baibhav")
+greetings('iron man')
