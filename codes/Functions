@@ -1,6 +1,11 @@
 //  function : a javascript function is a block of code designed to perform a particular task and is executed when " something " calls it !!
 //  arguments : function arguments are the values received by the function when it is called,they behave as variables ,however they only live within the function and cannot be accessed outside of it.
 // template-litreals : template literals provide an easy way to interpolate variables and expression into strings, interpolation is an effecient way of concatenation
+// return : the return statement stops the execution of a function and returns a value
+// |-> the return function makes the function more reusable ,you can use the same function at multiple places
+// Arrow functions : arrow function allows us to write shorter functions syntax
+// |-> a function is returnong implicitly if it doesn't use the return method
+
 
 // 1-normal function
 function name() {
@@ -27,3 +32,29 @@ function greetings(you) {
     console.log(greets)
 }
 greetings('iron man')
+
+//5 - function with more arguments
+function sum(a, b) {
+    return a + b
+}
+num = sum(1, 2)
+console.log(num)
+
+//sum with arrow function
+//a- with explicit return
+const SumArrow = (a, b) => {
+    return a + b
+}
+
+// b- with implicit return
+const SumArrow1 = (a, b) => a + b
+console.log(SumArrow1(12, 34))
+
+// Tip calculator in function
+function TipandTotal(food, tip) {
+    tipPercentage = tip / 100
+    tipAmount = food * tipPercentage
+    total = sum(food, tipAmount)
+    return total
+}
+console.log(TipandTotal(100, 20))
